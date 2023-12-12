@@ -3,9 +3,9 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaPersonChalkboard } from 'react-icons/fa6';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import goconfImg from '@/public/goconfImg.png';
+import roteraImg from '@/public/roteraImg.png';
+import myportfolioImg from '@/public/myportfolioImg.png';
 
 export const links = [
   {
@@ -36,7 +36,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    name: 'Digital School',
+    name: 'Digital School Macedonia',
     title: 'Instructor',
     location: 'Debar,North Macedonia',
     description:
@@ -49,7 +49,7 @@ export const experiencesData = [
     title: 'React Developer',
     location: 'Debar,North Macedonia',
     description:
-      'Contributor to the development and maintenance of web application, specializing in React.',
+      'As a React Developer at GoConf, I am actively contributing to the renement of  the user interface on the premier ICT conference discovery platform. My current role involves leveraging React.js to optimize frontend components, ensuring a  seamless and user-friendly experience for our audience.',
     icon: React.createElement(FaReact),
     date: '2023 - present',
   },
@@ -58,7 +58,7 @@ export const experiencesData = [
     title: 'Frontend Developer',
     location: 'Debar,North Macedonia',
     description:
-      'Collaborate with the development team to design and implement user interfaces for web applications using React.',
+      ' As a Frontend Developer at Rottera Software, I contribute my skills to a vibrant team dedicated to excellence in software development. Our versatile projects include websites and mobile apps, with an ongoing exploration of new opportunities.',
     icon: React.createElement(FaReact),
     date: '2022 - present',
   },
@@ -84,25 +84,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'GoConf',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
+      ' As a React Developer at GoConf, I am actively contributing to the renement of the user interface on the premier ICT conference discovery platform.',
+    tags: ['React', 'Chakra Ui', 'MongoDB', 'Prisma'],
+    imageUrl: goconfImg,
   },
   {
-    title: 'rmtDev',
+    title: 'Rottera',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
+      ' My role specically involves frontend development, specializing in UI5, as part of our comprehensive approach covering Mobile, Backend, Database, and DevOps domains.',
+    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind'],
+    imageUrl: roteraImg,
   },
   {
-    title: 'Word Analytics',
+    title: 'Personal Portfolio Website',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'Built a fully-fledged personal portfolio website utilizing the latest technologies:',
+    tags: ['React', 'Typescript', 'Next.js', 'Tailwind', 'Framer', 'Vercel'],
+    imageUrl: myportfolioImg,
   },
 ] as const;
 
