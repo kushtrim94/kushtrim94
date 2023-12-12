@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-        I'm Kushtrim Marke, a React developer with 3 years of experience.{' '}
+        I'm Kushtrim Marke, a React developer with 2 years of experience.{' '}
         <span className='font-medium'>I'm passionate</span> about creating
         responsive web solutions and optimizing user experiences.I'm always
         looking to learn new technologies and grow as a{' '}

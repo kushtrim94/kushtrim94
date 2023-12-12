@@ -87,7 +87,7 @@ export const projectsData = [
     title: 'GoConf',
     description:
       ' As a React Developer at GoConf, I am actively contributing to the renement of the user interface on the premier ICT conference discovery platform.',
-    tags: ['React', 'Chakra Ui', 'MongoDB', 'Prisma'],
+    tags: ['React','React Router', 'Chakra Ui'],
     imageUrl: goconfImg,
   },
   {
