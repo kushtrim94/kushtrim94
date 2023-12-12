@@ -6,6 +6,7 @@ import { LuGraduationCap } from 'react-icons/lu';
 import goconfImg from '@/public/goconfImg.png';
 import roteraImg from '@/public/roteraImg.png';
 import myportfolioImg from '@/public/myportfolioImg.png';
+import goconfadminImg from '@/public/goconfadminImg.png';
 
 export const links = [
   {
@@ -87,8 +88,15 @@ export const projectsData = [
     title: 'GoConf',
     description:
       ' As a React Developer at GoConf, I am actively contributing to the renement of the user interface on the premier ICT conference discovery platform.',
-    tags: ['React','React Router', 'Chakra Ui'],
+    tags: ['React', 'React Router', 'Chakra Ui'],
     imageUrl: goconfImg,
+  },
+  {
+    title: 'GoConf Admin',
+    description:
+      'As a Developer at GoConf, I extended my expertise to the creation of streamlined admin panels. I focused on optimizing frontend components, ensuring efficient navigation, and enhancing the overall usability of admin interfaces for diverse projects within the GoConf platform.',
+    tags: ['React', 'Chakra Ui'],
+    imageUrl: goconfadminImg,
   },
   {
     title: 'Rottera',
