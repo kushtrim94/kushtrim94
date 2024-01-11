@@ -7,6 +7,7 @@ import goconfImg from '@/public/goconfImg.png';
 import roteraImg from '@/public/roteraImg.png';
 import myportfolioImg from '@/public/myportfolioImg.png';
 import goconfadminImg from '@/public/goconfadminImg.png';
+import cleandibraImg from '@/public/cleandibraImg.png';
 
 export const links = [
   {
@@ -104,6 +105,13 @@ export const projectsData = [
       ' My role specically involves frontend development, specializing in UI5, as part of our comprehensive approach covering Mobile, Backend, Database, and DevOps domains.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind'],
     imageUrl: roteraImg,
+  },
+  {
+    title: 'Clean Dibra',
+    description:
+      'Developing a React app for a clean city project, promoting user-friendly tools for reporting and participating in urban cleanup efforts.',
+    tags: ['React'],
+    imageUrl: cleandibraImg,
   },
   {
     title: 'Personal Portfolio Website',

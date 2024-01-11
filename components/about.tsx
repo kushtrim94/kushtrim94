@@ -35,7 +35,7 @@ export default function About() {
         developer.
       </p>
 
-      <p>
+      {/* <p>
         <span className='italic'>When I'm not coding</span>, I enjoy playing
         basketball<span className='font-medium'></span>.{' '}
         <span className='font-medium'>
@@ -44,7 +44,7 @@ export default function About() {
         I thrive on the challenges of coding and find joy in the camaraderie of
         a team sport. Dedicated to continuous learning and growth, both on and
         off the court.
-      </p>
+      </p> */}
     </motion.section>
   );
 }
