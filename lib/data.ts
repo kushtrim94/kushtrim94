@@ -39,7 +39,7 @@ export const links = [
 export const experiencesData = [
   {
     name: 'Digital School Macedonia',
-    title: 'Instructor',
+    title: 'Programming Instructor',
     location: 'Debar,North Macedonia',
     description:
       'Instructed youth in tech education,Emphasized core programming skills,taught accredited courses.',
