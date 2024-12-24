@@ -19,10 +19,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm Kushtrim Marke, a React developer with 3 years of experience.{" "}
-        <span className="font-medium">I'm passionate</span> about creating
-        responsive web solutions and optimizing user experiences.I'm always
-        looking to learn new technologies and grow as a{" "}
+        I'm Kushtrim Marke, a React-NextJs developer with 3+ years of
+        experience. <span className="font-medium">I'm passionate</span> about
+        creating responsive web solutions and optimizing user experiences.I'm
+        always looking to learn new technologies and grow as a{" "}
         <span className="font-medium">developer</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
@@ -34,17 +34,6 @@ export default function About() {
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
-
-      {/* <p>
-        <span className='italic'>When I'm not coding</span>, I enjoy playing
-        basketball<span className='font-medium'></span>.{' '}
-        <span className='font-medium'>
-          "Tech-savvy developer by day basketball enthusiast by night."
-        </span>{' '}
-        I thrive on the challenges of coding and find joy in the camaraderie of
-        a team sport. Dedicated to continuous learning and growth, both on and
-        off the court.
-      </p> */}
     </motion.section>
   );
 }
