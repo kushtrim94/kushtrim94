@@ -1,3 +1,9 @@
 import { links } from "./data";
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName =
+  | "Home"
+  | "About"
+  | "Experience"
+  | "Projects"
+  | "Contact"
+  | "Skills";
