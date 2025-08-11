@@ -13,7 +13,7 @@ export default function Projects() {
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
       <p className="text-gray-700 dark:text-white/70 text-center max-w-[45rem] mx-auto mb-8 leading-relaxed">
-        Built and maintained over 15 web apps for specific industries using
+        Built and maintained over 20 web apps for specific industries using
         React, Next.js, and TypeScript, writing clean and scalable code.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[90rem] mx-auto">

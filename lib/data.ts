@@ -11,6 +11,7 @@ import nicheBotWidgetImg from "@/public/niche-bot.png";
 import premiumCashBuyersImg from "@/public/pcb.png";
 import nicheMastermindImg from "@/public/niche-mastermind.png";
 import nicheDatabaseAdminImg from "@/public/niche-admin.png";
+import dbarberImg from "@/public/dbarber.png";
 export const links = [
   {
     name: "Home",
@@ -92,6 +93,24 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "D Barber Shop - Modern Appointment Management Platform",
+    description:
+      "As a Full-Stack Developer, I architected and built a comprehensive barbershop appointment management system that revolutionizes how clients book services and how businesses manage their operations. Working independently, I developed the entire platform from concept to production deployment, creating a modern web application that serves as both a client-facing booking portal and a sophisticated admin management system. The platform transforms traditional barbershop operations through intelligent appointment scheduling, real-time availability checking, and automated workflow management. I solved complex challenges including Google Calendar bidirectional synchronization, guest booking systems without authentication barriers, and multilingual content delivery. The system features advanced Row Level Security (RLS) policies, comprehensive email notification workflows, and mobile-first responsive design that provides native app-like experiences across all devices.",
+    tags: [
+      "Next.js 15",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "Google Calendar API",
+      "Resend API",
+      "Framer Motion",
+      "Row Level Security",
+      "Next-Intl",
+    ],
+    imageUrl: dbarberImg,
+    projectUrl: "https://dbarber.it",
+  },
   {
     title: "Niche Mastermind",
     description:
