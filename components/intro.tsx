@@ -1,18 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import CalendlyModal from "./calendly-modal";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false);
 
   return (
     <section
@@ -61,10 +62,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Kushtrim</span>. I'm a{" "}
-        <span className="font-bold">frontend developer</span> with{" "}
-        <span className="font-bold">3+ years</span> of experience in{" "}
-        <span className="underline">React and Next.js</span>, creating dynamic
-        websites and applications.
+        <span className="font-bold">Frontend Developer</span> with{" "}
+        <span className="font-bold">4+ years</span> of experience building{" "}
+        <span className="underline">scalable web applications</span> using React
+        and Next.js.
       </motion.h1>
 
       <motion.div
@@ -87,13 +88,12 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
-        <a
+        <button
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://calendly.com/kushtrimmarke12/available"
-          target="_blank"
+          onClick={() => setIsCalendlyModalOpen(true)}
         >
           Schedule a meeting
-        </a>
+        </button>
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
@@ -105,12 +105,18 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/kushtrim94"
           target="_blank"
         >
           <FaGithubSquare />
         </a>
       </motion.div>
+
+      <CalendlyModal
+        isOpen={isCalendlyModalOpen}
+        onClose={() => setIsCalendlyModalOpen(false)}
+        skipToCalendly={true}
+      />
     </section>
   );
 }

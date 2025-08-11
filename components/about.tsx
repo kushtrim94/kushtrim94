@@ -19,20 +19,41 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm Kushtrim Marke, a React-NextJs developer with 3+ years of
-        experience. <span className="font-medium">I'm passionate</span> about
-        creating responsive web solutions and optimizing user experiences.I'm
-        always looking to learn new technologies and grow as a{" "}
-        <span className="font-medium">developer</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is <span className="font-medium">React, Next.js</span>. I am also
-        familiar with
-        <span className="font-medium">TypeScript and Prisma. </span> I am
-        currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I'm Kushtrim Marke, a{" "}
+        <span className="font-medium">Frontend Developer</span> with
+        <span className="font-medium"> 4+ years of experience</span> building
+        scalable web applications. Currently working at{" "}
+        <span className="font-medium">Key Innovative Solutions</span>, I
+        specialize in creating high-performance, user-friendly solutions that
+        drive real business results. I've successfully{" "}
+        <span className="italic">increased user retention by 30%</span> and
+        <span className="italic">improved app performance by 40%</span> through
+        strategic optimization.
+      </p>
+
+      <p className="mb-3">
+        <span className="italic">My favorite part of programming</span> is
+        solving complex problems and seeing the immediate impact on user
+        experience. I <span className="underline">thrive</span>
+        on turning challenging requirements into elegant, maintainable
+        solutions. My core expertise includes{" "}
+        <span className="font-medium">React, Next.js, TypeScript</span>, and
+        modern development practices including{" "}
+        <span className="font-medium">
+          performance optimization, SEO, and analytics integration
+        </span>
+        .
+      </p>
+
+      <p>
+        I'm passionate about{" "}
+        <span className="font-medium">continuous learning</span> and staying
+        current with industry trends. Whether working on client projects for
+        US-based companies or building innovative tools for niche markets, I
+        bring both technical excellence and business understanding to every
+        project.{" "}
+        <span className="italic">Always eager to tackle new challenges</span>{" "}
+        and contribute to impactful projects.
       </p>
     </motion.section>
   );

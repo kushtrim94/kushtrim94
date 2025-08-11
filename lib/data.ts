@@ -7,8 +7,10 @@ import goconfImg from "@/public/goconfImg.png";
 import roteraImg from "@/public/roteraImg.png";
 import myportfolioImg from "@/public/myportfolioImg.png";
 import goconfadminImg from "@/public/goconfadminImg.png";
-import cleandibraImg from "@/public/cleandibraImg.png";
-
+import nicheBotWidgetImg from "@/public/niche-bot.png";
+import premiumCashBuyersImg from "@/public/pcb.png";
+import nicheMastermindImg from "@/public/niche-mastermind.png";
+import nicheDatabaseAdminImg from "@/public/niche-admin.png";
 export const links = [
   {
     name: "Home",
@@ -17,6 +19,10 @@ export const links = [
   {
     name: "About",
     hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Experience",
@@ -30,13 +36,22 @@ export const links = [
 
 export const experiencesData = [
   {
+    name: "Key Innovative Solutions",
+    title: "Frontend Developer",
+    location: "Debar, North Macedonia",
+    description:
+      "Built and maintained over 20 web apps for specific industries using React, Next.js, and TypeScript, writing clean and scalable code. Made websites more user-friendly and mobile-friendly, which helped increase user retention by 30%. Worked closely with designers to turn wireframes into accurate and accessible web pages. Improved app speed by 40% by using techniques like lazy loading and better state management. Added tools like Google Tag Manager to track users and boost SEO, leading to a 25% rise in organic traffic. Collaborated in an agile team, joining daily meetings and planning sessions, helping us deliver features 20% faster than planned.",
+    icon: React.createElement(FaReact),
+    date: "Aug 2024 - present",
+  },
+  {
     name: "Niche Solutions",
-    title: "Front End Developer",
+    title: "Client Project - Frontend Developer",
     location: "United States (Remote)",
     description:
-      "At Niche Solutions, we develop innovative tools at the intersection of real estate, education, data, and software. As a Frontend Developer, I create user-friendly solutions that empower professionals in niche markets, driving growth and efficiency through advanced technology.",
+      "As part of Key Innovative Solutions, I work on projects for Niche Solutions, developing innovative tools at the intersection of real estate, education, data, and software. I create user-friendly solutions that empower professionals in niche markets, driving growth and efficiency through advanced technology.",
     icon: React.createElement(FaPersonChalkboard),
-    date: "2024 - present",
+    date: "Aug 2024 - present",
   },
   {
     name: "Digital School Macedonia",
@@ -74,54 +89,105 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
-  {
-    name: "South East European University",
-    title: "Bachelor of Science In Computer Sciences",
-    location: "Tetovo,North Macedonia",
-    description:
-      "I graduated after 3 years of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2017",
-  },
 ] as const;
 
-// export const projectsData = [
-//   {
-//     title: "GoConf",
-//     description:
-//       " As a React Developer at GoConf, I am actively contributing to the renement of the user interface on the premier ICT conference discovery platform.",
-//     tags: ["React", "React Router", "Chakra Ui"],
-//     imageUrl: goconfImg,
-//   },
-//   {
-//     title: "GoConf Admin",
-//     description:
-//       "As a Developer at GoConf, I extended my expertise to the creation of streamlined admin panels. I focused on optimizing frontend components, ensuring efficient navigation, and enhancing the overall usability of admin interfaces for diverse projects within the GoConf platform.",
-//     tags: ["React", "Chakra Ui"],
-//     imageUrl: goconfadminImg,
-//   },
-//   {
-//     title: "Rottera",
-//     description:
-//       " My role specically involves frontend development, specializing in UI5, as part of our comprehensive approach covering Mobile, Backend, Database, and DevOps domains.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
-//     imageUrl: roteraImg,
-//   },
-//   {
-//     title: "Clean Dibra",
-//     description:
-//       "Developing a React app for a clean city project, promoting user-friendly tools for reporting and participating in urban cleanup efforts.",
-//     tags: ["React"],
-//     imageUrl: cleandibraImg,
-//   },
-//   {
-//     title: "Personal Portfolio Website",
-//     description:
-//       "Built a fully-fledged personal portfolio website utilizing the latest technologies:",
-//     tags: ["React", "Typescript", "Next.js", "Tailwind", "Framer", "Vercel"],
-//     imageUrl: myportfolioImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: "Niche Mastermind",
+    description:
+      "As a Frontend Developer, I built a sophisticated real estate coaching platform that connects investors through interactive events and seamless onboarding experiences. I developed dynamic landing pages for mastermind events, created a multi-step client onboarding system with progress tracking, and implemented responsive video components with custom controls and thumbnail navigation. I focused on building reusable React components with TypeScript, integrating Calendly scheduling modals, and creating smooth user experiences across desktop and mobile devices. The platform features interactive video swipers, animated loading states, form validation, and a mobile-first responsive design using Tailwind CSS.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Swiper.js",
+      "Headless UI",
+    ],
+    imageUrl: nicheMastermindImg,
+    projectUrl: "https://www.getnichenow.com/",
+    githubUrl: null,
+  },
+  {
+    title: "Niche Bot Widget",
+    description:
+      "As a Frontend Developer, I built an intelligent AI-powered chat widget that transforms any website into a customer support platform. Working with our team, we created the entire Niche Bot system from scratch, including the custom AI backend. I focused on developing a universal integration solution using Web Components and Shadow DOM, ensuring seamless compatibility across all web frameworks and platforms with just a single line of code.",
+    tags: ["React", "TypeScript", "Web Components", "WebSockets", "Tailwind"],
+    imageUrl: nicheBotWidgetImg,
+    projectUrl: "https://niche-bot.vercel.app/",
+    githubUrl: null,
+  },
+  {
+    title: "Premium Cash Buyers - Real Estate Platform",
+    description:
+      "As a Frontend Developer, I built a comprehensive real estate landing platform that converts homeowners into cash sale leads through optimized user experiences and advanced SEO implementation. Working independently, I developed the entire frontend ecosystem from multi-step forms to dynamic content management, focusing on performance and search engine visibility. I solved critical Google Search Console video indexing issues by implementing comprehensive VideoObject structured data, created dedicated watch pages, and built video sitemaps that improved discoverability. The platform features responsive design across 51+ static pages, location-based dynamic content, and a scalable blog system with category routing.",
+    tags: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "React",
+      "SEO/Structured Data",
+      "Responsive Design",
+    ],
+    imageUrl: premiumCashBuyersImg,
+    projectUrl: "https://premiumcashbuyers.com/",
+    githubUrl: null,
+  },
+  {
+    title: "Niche Database Admin - Web Scraping Management Platform",
+    description:
+      "As a Frontend Developer, I built a comprehensive administrative dashboard for managing large-scale web scraping operations that process public notices and legal documents. Working independently, I developed the entire user interface from authentication flows to real-time analytics, focusing on user experience and responsive design. I implemented dynamic data visualization components for monitoring parser performance, intuitive CRUD interfaces for managing data sources and users, and a sophisticated educational bot monitoring system. The platform features multi-view data presentation options and real-time statistics visualization displaying metrics from millions of legal notices including foreclosures, tax sales, and probate records.",
+    tags: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "SWR",
+      "React Hook Form",
+      "Zod",
+      "Radix UI",
+    ],
+    imageUrl: nicheDatabaseAdminImg,
+    projectUrl: "https://admin.niche-db.com/",
+    githubUrl: null,
+  },
+  {
+    title: "GoConf",
+    description:
+      " As a React Developer at GoConf, I am actively contributing to the renement of the user interface on the premier ICT conference discovery platform.",
+    tags: ["React", "React Router", "Chakra Ui"],
+    imageUrl: goconfImg,
+    projectUrl: "https://goconf.io/",
+    githubUrl: null,
+  },
+  {
+    title: "GoConf Admin",
+    description:
+      "As a Developer at GoConf, I extended my expertise to the creation of streamlined admin panels. I focused on optimizing frontend components, ensuring efficient navigation, and enhancing the overall usability of admin interfaces for diverse projects within the GoConf platform.",
+    tags: ["React", "Chakra Ui"],
+    imageUrl: goconfadminImg,
+    projectUrl: "https://admin.goconf.io",
+    githubUrl: null,
+  },
+  {
+    title: "Rottera",
+    description:
+      " My role specically involves frontend development, specializing in UI5, as part of our comprehensive approach covering Mobile, Backend, Database, and DevOps domains.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
+    imageUrl: roteraImg,
+    projectUrl: "https://rottera.io",
+    githubUrl: null,
+  },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "Built a fully-fledged personal portfolio website utilizing the latest technologies:",
+    tags: ["React", "Typescript", "Next.js", "Tailwind", "Framer", "Vercel"],
+    imageUrl: myportfolioImg,
+    projectUrl: "https://kushtrimmarke.dev",
+    githubUrl: "https://github.com/kushtrimmarke/kushtrim-portfolio",
+  },
+] as const;
 
 export const skillsData = [
   "HTML",
