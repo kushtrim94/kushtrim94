@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         I'm Kushtrim Marke, a{" "}
-        <span className="font-medium">Full-Stack Developer</span> with
+        <span className="font-medium">Frontend Developer</span> with
         <span className="font-medium"> 4+ years of experience</span> building
         scalable web applications. Currently working at{" "}
         <span className="font-medium">Key Innovative Solutions</span>, I
