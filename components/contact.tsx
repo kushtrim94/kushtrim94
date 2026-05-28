@@ -49,7 +49,9 @@ export default function Contact() {
             return;
           }
 
-          toast.success('Email sent successfully!');
+          if (data) {
+            toast.success('Email sent successfully!');
+          }
         }}
       >
         <input

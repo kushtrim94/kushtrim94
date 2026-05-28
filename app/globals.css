@@ -3,13 +3,53 @@
 @tailwind utilities;
 
 html {
-  --line-color: #e5e7eb;
+  --ink: #1a1915;
+  --paper: #f5f2eb;
+  --accent: #2a4a3e;
+  --gold: #c8a96e;
+  --muted: #7a7668;
+  --line: rgba(26, 25, 21, 0.12);
+  --success: #0f6e56;
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+* {
+  box-sizing: border-box;
 }
 
-.borderBlack {
-  @apply border border-black/10;
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: var(--font-fraunces), serif;
+}
+
+.font-body {
+  font-family: var(--font-dm-mono), monospace;
+}
+
+.text-ink {
+  color: var(--ink);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.border-line {
+  border-color: var(--line);
+}
+
+.bg-paper {
+  background: var(--paper);
 }

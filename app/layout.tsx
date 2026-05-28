@@ -1,18 +1,25 @@
-import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
+import { DM_Mono, Fraunces } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
+  variable: "--font-dm-mono",
+});
 
 export const metadata = {
-  title: "Kushtrim | Personal Portfolio",
-  description: "Kushtrim is a frontend developer with 3 years of experience.",
+  title: "Kushtrim Marke — Senior Frontend Engineer",
+  description:
+    "Senior Frontend Engineer with 5+ years building production React and Next.js applications across real estate, edtech, SaaS, and e-commerce.",
 };
 
 export default function RootLayout({
@@ -21,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${dmMono.variable} !scroll-smooth`}
+    >
       <head>
         <script
           defer
@@ -41,22 +51,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
-      >
-        <div className="bg-[#c0c0c0] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#c0c0c0]"></div>
-        <div className="bg-[#dfe3ee] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#333333]"></div>
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-            <Analytics />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+      <body className="font-body bg-[var(--paper)] text-[var(--ink)] antialiased">
+        {children}
+        <Analytics />
       </body>
     </html>
   );
